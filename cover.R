@@ -16,7 +16,7 @@ proportionfemale= 0.5 #female and male ratio something like that
 reproductiveage= 1 #reproduce after year 1
 
 #generate list of combinations of parameter values to simulate
-replicates = expand.grid(poptime, poptime, k, broodsize, reproductiveage, proportionfemale)
+replicates = expand.grid(poptime, maxage, k, broodsize, reproductiveage, proportionfemale)
 colnames(replicates) = c("poptime", "maxage", "k", "broodsize", "reproductiveage", "proportionfemale")
 
 #run model iterating over parameters in replicates
